@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list,tables and forms</title>
+    <link rel="shortcut icon" href="catclose.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- list -->
+    <ul type="square">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact us</li>
+        <li>Services</li>
+    </ul>
+    <ol type="I ">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact us</li>
+        <li>Services</li>
+    </ol>
+
+    <!-- table -->
+
+    <div>
+        <table align="center" border="1" width="50%" style="border-color: chartreuse; color: red;">
+            <caption>Number of players =100</caption>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Player name</th>
+                    <th>Kills</th>
+                    <th>Assists</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <td>1</td>
+                    <td>Prince</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lord</td>
+                    <td>8</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Anshul</td>
+                    <td>4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Stark</td>
+                    <td>0</td>
+                    <td>2</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <!-- form -->
+
+    <div>
+        <h1 style="color: blue;">TRAVEL FORM</h1>
+        <form action="form.php">
+            <input type="text" placeholder="Enter Your Name"><br>
+            <label for="sectionida">
+                <input type="radio" value="Section A" name="section" id="sectionida">Section A
+            </label>
+            <label for="sectionidb">
+                <input type="radio" value="Section B" name="section" id="sectionidb">Section B
+            </label>
+            <label for="sectionidc">
+                <input type="radio" value="Section C" name="section" id="sectionidc">Section C
+            </label><br>
+            <input type="checkbox" name="adults" id="age">
+            <label for="age">Are you over 18?</label><br>
+            <textarea name="info" id="info" cols="30" rows="10" placeholder="Tell me about yourself!"></textarea><br>
+            <select name="btech" id="branch">
+                <option value="default">Enter your branch</option>
+                <option value="cse">CSE</option>
+                <option value="aiml">CSE(AI-ML)</option>
+                <option value="ds">CSE(DS)</option>
+                <option value="csit">CSIT</option>
+                <option value="it">IT</option>
+                <option value="ece">ECE</option>
+                <option value="elec">EN</option>
+                <option value="mech">MECHANICAL</option>
+                <option value="civ">CIVIL</option>
+            </select>
+        </form>
+    </div>
+    <div> 
+        <video src="Zombie Apocalypse.mp4" autoplay controls  loop width="500px" ></video>
+    </div>
+
+</body>
+
+</html>
