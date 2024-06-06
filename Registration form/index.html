@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration From</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Father's Name</span>
+                    <input type="text" placeholder="Enter your Father's name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Mother's Name</span>
+                    <input type="text" placeholder="Enter your Mother's name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter your email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Mobile No.</span>
+                    <input type="tel" placeholder="Enter your number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Gender</span>
+                    <select id="gend">
+                        <option value="none">-Select-</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other/Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="details">DoB</span>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Category</span>
+                    <select id="cat">
+                        <option value="none">-Select-</option>
+                        <option value="general">General</option>
+                        <option value="obc">OBC</option>
+                        <option value="scst">SC/ST</option>
+                        <option value="genews">General-EWS</option>
+                        <option value="pwd">PWD</option>
+                        <option value="other">Any Other</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="details">Address</span>
+                    <textarea id="add" cols="30" rows="4" required></textarea>
+                </div>
+                <div class="input-box">
+                    <span class="details">Branch</span>
+                    <select id="branch">
+                        <option value="none">-Select-</option>
+                        <option value="cse">CSE</option>
+                        <option value="it">IT</option>
+                        <option value="ece">ECE</option>
+                        <option value="csit">CSIT</option>
+                        <option value="cs">CS</option>
+                        <option value="csds">CSE(DS)</option>
+                        <option value="csaiml">CSE(AIML)</option>
+                        <option value="csh">CSE(Hindi)</option>
+                        <option value="en">ELECTRICAL</option>
+                        <option value="civil">CIVIL</option>
+                    </select>
+                </div>
+                <div class="input-box2">
+                    <span class="details">Photo : </span>
+                    <input type="file" onchange="readURL(this)" accept="image" required>
+                </div>
+                <div class="input-box2">
+                    <span class="details">Signature : </span>
+                    <input type="file" onchange="readURL(this)" accept="image" required>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
